@@ -1,0 +1,380 @@
+/*
+Project Name: Relaxr Blog
+Client: Relaxr
+Author: Aaron Stannard
+Developer @GA in SYD
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+/* Box Model Hack */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #fff;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/* Center the container */
+
+#container {
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #033048;
+    background-image: url(../images/header_bg.jpg);
+    background-position: center bottom;
+    padding: 23px 120px;
+}
+
+#headerBlog {
+    height: 120px;
+}
+
+#headerLanding {
+    height: 700px;
+}
+
+main {
+    background: #efefef;
+    padding: 80px 120px 60px 120px;
+}
+
+footer {
+    background: #121212;
+    padding: 80px 120px 40px 120px;
+}
+
+
+/*******************************************
+/* ADDITIONAL STYLES                       
+/*******************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+div,
+article,
+section,
+aside,
+img {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #033048;
+}
+
+a:visited {
+    color: #033048;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a:active {
+    color: #033048;
+}
+
+h1,
+h6 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #033048;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #033048;
+}
+
+h6 {
+    color: #f9e42e;
+}
+
+header h1,
+header nav {
+    display: inline-block;
+}
+
+header nav {
+    text-align: right;
+    float: right;
+    margin-top: 26px;
+}
+
+header nav a {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+header nav a:link {
+    color: #f9e42e;
+}
+
+header nav a:visited {
+    color: #f9e42e;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+header nav a:active {
+    color: #f9e42e;
+}
+
+#articles {
+    width: 700px;
+}
+
+article p {
+    font-size: 24px;
+    font-weight: 300;
+    color: #606060;
+}
+
+article p::first-letter {
+    float: left;
+    font-size: 300%;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+article div {
+    text-align: right;
+    font-size: 24px;
+    font-weight: 600;
+    color: #033048;
+}
+
+article h3,
+article img,
+article p {
+    margin-bottom: 30px;
+}
+
+article:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #033048;
+    margin: 40px 0px 50px 0px;
+}
+
+aside {
+    width: 240px;
+    color: #033048;
+}
+
+#categories nav a {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+#about {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+#about p {
+    font-weight: 300;
+}
+
+#about a {
+    font-weight: 600;
+}
+
+aside h4 {
+    margin-bottom: 20px;
+}
+
+#categories,
+#about {
+    margin-bottom: 40px;
+}
+
+#signUp {
+    text-align: center;
+    background: #f9e42e;
+    padding: 30px 0px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h6,
+footer nav {
+    margin-bottom: 60px;
+}
+
+footer nav a {
+    display: inline-block;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+button {
+    font-size: 26px;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 70px;
+    margin: auto;
+}
+
+button:focus {
+    outline: none;
+}
+
+.blueButton {
+    color: #fff;
+    background: #033048;
+}
+
+.yellowButton {
+    color: #033048;
+    background: #f9e42e;
+}
+
+.blueButton:hover {
+    color: #f9e42e;
+    background: #033048;
+}
+
+.yellowButton:hover {
+    color: #fff;
+    background: #f9e42e;
+}
+
+/*******************************************
+/* LANDING PAGE                      
+/*******************************************/
+
+#headerLanding h2,
+#getIt {
+    text-align: center;
+}
+
+#headerLanding h2 {
+    padding: 100px 0px 100px 0px;
+}
+
+#benefits {
+    background: #f0efef;
+    padding: 80px 475px 80px 120px;
+}
+
+#benefits p,
+#benefits ul {
+    font-size: 26px;
+    font-weight: 300;
+    color: #606060;
+}
+
+#benefits h3 {
+    padding-bottom: 30px;
+}
+
+#benefits p {
+    padding-bottom: 60px;
+}
+
+#testimonial {
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    background: url("../images/testimonial_bg.jpg");
+    padding: 80px 240px;
+}
+
+#testimonial #quote {
+    font-weight: 300;
+    font-style: italic;
+}
+
+#testimonial #name {
+    font-weight: 600;
+}
